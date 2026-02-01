@@ -13,7 +13,7 @@
 .navbar button {
     background-color: #1A1A1A;
     color: #B3B3B2;
-    border: 1px solid #B3B3B2;
+    border: 1px dashed #B3B3B2;
     
 }
 
@@ -29,21 +29,28 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
     border-radius: 20px;  
 }
-.elevateYourStyle img{
+ 
+.elevateYourStyle .mainGirlCont{
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 5;
-    width: 1596px;
+    width: 100%;
     height: 624px;
+    overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
 }
 
+.mainGirlCont img {
+    width: 100%;
+    height: 624px;
+    object-fit: cover;
+}
 
 
 .elevateYourStyle h2 {
@@ -68,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
 }
 
 .elevateYourStyle div:nth-child(4) {
@@ -80,7 +87,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
 }
 
 .elevateYourStyle div:nth-child(5) {
@@ -92,7 +99,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
 }
 
 .elevateYourStyle div:nth-child(6) {
@@ -104,7 +111,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
     border-bottom-right-radius: 20px;
 }
 
@@ -119,7 +126,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
     border-bottom-left-radius: 20px;
 }
 
@@ -129,7 +136,7 @@
     padding: 14px 20px;
     font-size: 18px;
     color: #B3B3B2;
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
 }
 
 .elevateYourStyleMainContent h1 {
@@ -153,22 +160,39 @@
     grid-template-columns: 1fr 1fr 1fr;
     width: 1596px;
     justify-self: center;
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
     border-radius: 20px;
+}
+.craftingTrends h2 {
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.craftingTrends p {
+    font-size: 18px;
+    color: #81807E;
+    line-height: 150%;
 }
 
 .craftingTrends h3 {
-    
+    font-size: 24px;
+    color: #FFFFFF;
 }
 
 .craftingTrends div:nth-child(1) {
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 80px;
 }
 
 .craftingTrends div {
-    border: 1px solid #676665;
+    border: 1px dashed #676665;
 }
 
 .craftingTrends div:nth-child(5) {
@@ -183,5 +207,55 @@
     grid-row-start: 1;
     grid-column: span 3;
 
+}
+
+.clotheCollection {
+    display: grid;
+    width: 1596px;
+    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.clotheCollection div {
+    border: 1px dashed #676665;
+
+}
+
+
+.clotheCollection div:nth-child(1) {
+    grid-column: span 3;
+}
+
+.clotheCollection h2 {
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.clotheCollection h3 {
+    font-size: 24px;
+    color: white;
+    
+}
+
+.clotheCollection p {
+    font-size: 18px;
+    color: #81807E;
+    line-height: 150%;
+}
+
+.imageCont {
+    width: 472px;
+    height: 386px;
+    overflow: hidden;
+}
+
+.imageCont img {
+    width: 472px;
+    height: 386px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    object-fit: cover;
 }
 

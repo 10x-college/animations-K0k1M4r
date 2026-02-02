@@ -448,5 +448,59 @@
 }
 
 .periodYellow {
-     color: #B8A893;
+    color: #B8A893;
+}
+
+.contactUs {
+    display: flex;
+    width: 1596px;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96.5px 150px;
+}
+
+
+.contactUs input {
+    background-color: #1A1A1A;
+    color: #676665;
+    width: 450px;
+    height: 63px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    padding: 0 24px;
+}
+
+
+
+.contactUsText {
+    display: flex;
+    gap: 38px;
+}
+
+.contactUs h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+
+.contactUs p {
+    color: #676665;
+}
+
+
+.footer {
+    border-top: 1px dashed #676665;
+    color: #676665;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 50px 162px;
+}
+
+.footer div {
+    display: flex;
+    gap: 22px;
 }

@@ -209,19 +209,115 @@
 
 }
 
+
+.clotheCollectionHeader {
+    padding: 80px;
+}
+
+.clotheCollectionHeader p {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #81807E;
+    line-height: 150%;
+}
+
+
 .clotheCollection {
     display: grid;
     width: 1596px;
     justify-self: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
-
-.clotheCollection div {
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (4, 1fr);
     border: 1px dashed #676665;
-
+    border-radius: 20px;
 }
 
+
+
+.clotheCollectionButtons {
+    margin-top: 50px;
+    display: flex;
+    gap: 14px;
+}
+
+.clotheCollectionButtons button {
+    color: #B3B3B2;
+    background-color: black;
+    border: 1px dashed #676665;
+    font-size: 18px;
+    height: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 12px;
+}
+
+.clotheProductCont:nth-child(5) {
+    border-bottom-left-radius: 20px;
+}
+
+.clotheProductCont:nth-child(7) {
+    border-bottom-right-radius: 20px;
+}
+
+.clotheProductCont {
+    border: 1px dashed #676665;
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+    padding: 29px;
+    
+}
+
+.clotheProductCont button:nth-child(1) {
+    height: 47px;
+    border-radius: 100px;
+    padding:0 16px;
+    font-size: 18px;
+    color: #B3B3B2;
+    background-color: #1A1A1A;
+    border: 1px dashed #262626
+}
+
+.clotheProductCont button:nth-child(2) {
+    height: 63px;
+    padding:0 24px;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: #1F1F1F;
+    border: 1px dashed #262626;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.clotheProductCont div:first-child {
+    align-self: center;
+}
+
+.clotheProductCont div:nth-child(2) {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clotheProductCont div:nth-child(4) {
+    margin-top: 14px;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.clotheProductCont p {
+    color: #81807E;
+}
+
+.clotheProductCont p:nth-child(2),
+.clotheProductCont p:nth-child(4) 
+{
+    color: #CCCCCC;
+}
 
 .clotheCollection div:nth-child(1) {
     grid-column: span 3;
@@ -236,14 +332,11 @@
 .clotheCollection h3 {
     font-size: 24px;
     color: white;
-    
+    margin-top: 20px;
+    letter-spacing: 3.5px;
 }
 
-.clotheCollection p {
-    font-size: 18px;
-    color: #81807E;
-    line-height: 150%;
-}
+
 
 .imageCont {
     width: 472px;
@@ -259,3 +352,101 @@
     object-fit: cover;
 }
 
+.qna {
+    border: 1px dashed #676665;
+    width: 1596px;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (4, 1fr);
+    justify-self: center;
+    border-radius: 20px;
+}
+
+.qnaHeader {
+    grid-column: span 2;
+    padding: 80px 0 80px 80px;
+}
+
+.qnaHeader h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.qnaHeader p {
+    margin-top: 30px;
+}
+
+.qnaHeader div {
+    display: flex;
+    gap: 14px;
+    margin-top: 50px;
+}
+
+.qnaHeader button {
+    height: 63px;
+    font-size: 18px;
+    padding: 0 24px;
+    border: 1px dashed #676665;
+    border-radius: 12px;
+    color: #B3B3B2;
+    background-color: black;
+}
+
+.qna h2 {
+    color: white;
+}
+
+.qna p {
+    color: #676665;
+    font-size: 18px;
+}
+
+.qna h3 {
+    color: white;
+    font-size: 24px;
+}
+
+.qnaQuestions {
+    border: 1px dashed #676665;
+    padding: 60px;
+}
+
+.qnaQuestions p {
+    line-height: 150%;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.qnaQuestions:nth-child(6) {
+    border-bottom-left-radius: 20px;
+}
+
+.qnaQuestions:nth-child(7) {
+    border-bottom-right-radius: 20px;
+}
+
+.styleLoomExternalLinks {
+    border-top: 1px dashed #676665;
+    border-bottom: 1px dashed #676665;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 162px;
+}
+
+.styleLoomExternalLinks h1 {
+    color: #FFFFFF;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+ 
+
+.styleLoomExternalLinks button {
+    background: none;
+    border: none;
+}
+
+.periodYellow {
+     color: #B8A893;
+}

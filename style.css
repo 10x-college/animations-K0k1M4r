@@ -1,24 +1,99 @@
 .header {
     width: 100%;
     display: flex;
-    
+    height: 123px;
+    justify-content: space-between;
+}
+
+.headerDivOne {
+    margin-top: 53px;
+    margin-right: 30px;
+    margin-left: 62px;
+    width: 70px;
+    height: 70px;
+    border-right: 1px dashed #B3B3B2;
+    border-bottom: 1px dashed #B3B3B2;
+}
+
+.headerDivTwo {
+    margin-top: 53px;
+    margin-left: 30px;
+    margin-right: 62px;
+    width: 70px;
+    height: 70px;
+    border-left: 1px dashed #B3B3B2;
+    border-bottom: 1px dashed #B3B3B2;
 }
 
 .navbar {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    border-bottom: 1px dashed #B3B3B2;
 } 
 
 .navbar button {
-    background-color: #1A1A1A;
+    background-color: black;
     color: #B3B3B2;
     border: 1px dashed #B3B3B2;
+    height: 63px;
+    border-radius: 12px;
+    font-size: 18px;
+    width: min-content;
+    
+    transition: color 1s, background-color 1s, border 1s;
+}
+
+.navbar button:hover {
+    background-color: #1A1A1A;
+    color: white;
+    border: none;
+}
+
+.navbar div:first-child {
+    display: flex;
+    gap: 14px;
+}
+
+.navbar div:last-child {
+    display: flex;
+    gap: 14px;
+}
+
+.navbar button:nth-child(1) {
+    padding: 0 30px;
+    
+}
+
+.navbar button:nth-child(2) {
+    padding: 0 24px;
+}
+
+
+.navbar button:nth-child(3) {
+    padding: 0 18px;
+}
+
+
+.navbar button img {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    padding: 0;
     
 }
 
 .navbar h3 {
     color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+main {
+    margin-top: 60px;
 }
 
 .elevateYourStyle {
@@ -46,12 +121,50 @@
     
 }
 
+.mainGirlCont {
+    position: relative;
+}
+
+.mainGirlCont div {
+    background-color: black;
+    height: 80px;
+    width: 190px;
+    z-index: 19;
+    position: absolute;
+    bottom: 0%;
+    right: 44.1%;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+
 .mainGirlCont img {
+    position: relative;
     width: 100%;
     height: 624px;
     object-fit: cover;
 }
 
+.mainGirlCont button { 
+    height: 63px;
+    padding:0 24px;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: #1F1F1F;
+    border: 1px dashed #262626;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    z-index: 20;
+    bottom: 0%;
+    right: 45%;
+}
+
+.mainGirlCont button img {
+    height: 19px;
+    width: 19px;
+}
 
 .elevateYourStyle h2 {
     color: #FFFFFF;
@@ -121,22 +234,35 @@
     grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 3;
-    height: 100%;
-    width: 100%;
+    height: 71%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px dashed #676665;
     border-bottom-left-radius: 20px;
+    padding: 80px;
+}
+
+.elevateYourStyleMainContent div:nth-child(1) {
+    display: flex;
+    gap: 14px;
 }
 
 .elevateYourStyleMainContent button {
-    background-color: #1A1A1A;
+    background-color: black;
     height: 55px;
     padding: 14px 20px;
     font-size: 18px;
     color: #B3B3B2;
     border: 1px dashed #676665;
+    border-radius: 12px;
+    transition: color 1s, background-color 1s, border 1s;
+}
+
+.elevateYourStyleMainContent button:hover {
+    background-color: #1A1A1A;
+    color: white;
+    border: none;
 }
 
 .elevateYourStyleMainContent h1 {
@@ -162,12 +288,28 @@
     justify-self: center;
     border: 1px dashed #676665;
     border-radius: 20px;
+    margin-top: 24px;
 }
+
+
+.craftingTrendsContent {
+    position: relative;
+    overflow: hidden;
+}
+
 .craftingTrends h2 {
     font-size: 48px;
     color: white;
     text-transform: uppercase;
 }
+
+.craftingTrendsPics {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+}
+
 
 .craftingTrends p {
     font-size: 18px;
@@ -175,9 +317,14 @@
     line-height: 150%;
 }
 
+.craftingTrendsPar {
+    margin-top: 16px;
+}
+
 .craftingTrends h3 {
     font-size: 24px;
     color: #FFFFFF;
+    margin-top: 50px;
 }
 
 .craftingTrends div:nth-child(1) {
@@ -188,11 +335,14 @@
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    padding-left: 80px;
+    grid-row-start: 1;
+    grid-column: span 3;
+    
 }
 
 .craftingTrends div {
     border: 1px dashed #676665;
+    padding: 60px;
 }
 
 .craftingTrends div:nth-child(5) {
@@ -203,15 +353,19 @@
     border-bottom-right-radius: 20px;
 }
 
-.craftingTrends div:nth-child(1) {
-    grid-row-start: 1;
-    grid-column: span 3;
 
+.clotheCollectionHeader {
+    position: relative;
+    padding: 80px;
+    overflow: hidden;
 }
 
 
-.clotheCollectionHeader {
-    padding: 80px;
+.clotheCollectionHeader img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
 }
 
 .clotheCollectionHeader p {
@@ -240,8 +394,10 @@
     gap: 14px;
 }
 
+
+
 .clotheCollectionButtons button {
-    color: #B3B3B2;
+    color: #b2b2b3;
     background-color: black;
     border: 1px dashed #676665;
     font-size: 18px;
@@ -249,6 +405,15 @@
     padding-left: 24px;
     padding-right: 24px;
     border-radius: 12px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+
+
+.clotheCollectionButtons button:hover {
+    background-color: #1A1A1A;
+    color: white;
+    border: none;
 }
 
 .clotheProductCont:nth-child(5) {
@@ -342,6 +507,11 @@
     width: 472px;
     height: 386px;
     overflow: hidden;
+    transition: scale 1s;
+}
+
+.imageCont:hover {
+    scale: 1.1;
 }
 
 .imageCont img {
@@ -360,11 +530,21 @@
     grid-template-rows: (4, 1fr);
     justify-self: center;
     border-radius: 20px;
+    margin-top: 36px;
 }
 
 .qnaHeader {
+    position: relative;
     grid-column: span 2;
     padding: 80px 0 80px 80px;
+    overflow: hidden;
+}
+
+.qnaHeader img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    right: 0;
 }
 
 .qnaHeader h2 {
@@ -390,7 +570,15 @@
     border-radius: 12px;
     color: #B3B3B2;
     background-color: black;
+    transition: background-color 1s, color 1s, border 1s;
 }
+
+.qnaHeader button:hover {
+    background-color: #C2B4A3;
+    color: black;
+    border: none;
+} 
+
 
 .qna h2 {
     color: white;
@@ -432,6 +620,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 100px 162px;
+    margin-top: 36px;
 }
 
 .styleLoomExternalLinks h1 {
